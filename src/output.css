@@ -554,6 +554,105 @@ video {
   --tw-contain-style:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-\[\] {
+  gap: ;
+}
+
+.gap-\[15px\] {
+  gap: 15px;
+}
+
+.gap-\[35px\] {
+  gap: 35px;
+}
+
+.gap-\[20px\] {
+  gap: 20px;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -583,13 +682,109 @@ video {
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#C1272D\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(193 39 45 / var(--tw-bg-opacity));
+}
+
+.px-\[10\%\] {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.px-\[5\%\] {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-\[\] {
+  padding-left: ;
+  padding-right: ;
+}
+
+.px-\[20px\] {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.py-\[15px\] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.pt-\[\] {
+  padding-top: ;
+}
+
+.pt-\[10px\] {
+  padding-top: 10px;
+}
+
+.pt-\[20px\] {
+  padding-top: 20px;
+}
+
+.pb-\[5px\] {
+  padding-bottom: 5px;
+}
+
+.pb-\[15px\] {
+  padding-bottom: 15px;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
+.text-\[16px\] {
+  font-size: 16px;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[white\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
