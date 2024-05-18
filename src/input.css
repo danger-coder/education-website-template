@@ -9,3 +9,8 @@ body{
     font-family: "Roboto", sans-serif;
     overflow-x: hidden;
 }
+
+.swiper {
+    width: 100%;
+    height: 300px;
+  }
