@@ -19,7 +19,8 @@ const swiper = new Swiper(".swiper", {
   //   },
 
   // And if we need scrollbar
-  //   scrollbar: {
-  //     el: "",
-  //   },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: true,
+  },
 });
