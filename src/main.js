@@ -5,7 +5,7 @@ const swiper = new Swiper(".swiper", {
   slidesPerView: 3,
   spaceBetween: 30,
   freeMode: true,
-  autoplay: true,
+  autoplay: false,
 
   // If we need pagination
   pagination: {
@@ -13,10 +13,10 @@ const swiper = new Swiper(".swiper", {
   },
 
   // Navigation arrows
-  //   navigation: {
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper-button-prev",
-  //   },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
 
   // And if we need scrollbar
   scrollbar: {

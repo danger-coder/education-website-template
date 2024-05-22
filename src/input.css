@@ -18,7 +18,15 @@ body{
   }
 
   .swiper-button-prev ,.swiper-button-next{
-display: none !important;
+/* display: none !important; */
+top: 42% !important;
+/* left:0% !important ; */
+  }
+  .swiper-button-prev{
+    left: 0% !important;
+  }
+  .swiper-button-next{
+    right: 0% !important;
   }
 
   /* For Chrome, Safari, and Edge */
