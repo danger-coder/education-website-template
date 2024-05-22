@@ -7,6 +7,8 @@
     <link href="/src/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body class="">
@@ -37,16 +39,18 @@
         </div>
         <div class="container mx-auto flex items-start pt-52 relative" style="z-index: 2 !important">
             <div class="basis-[40%]">
-                <h1 class="text-[69px] font-extrabold">
+                <h1 class="text-[69px] font-extrabold" data-aos="fade-up" data-aos-duration="1000">
                     The <span class="text-[#FF7426]">Smart</span> <br />
                     Choice For <span class="text-[#FF7426]">Future</span>
                 </h1>
-                <p class="text-[#8A8A8A] text-[20px] font-medium mb-[50px]">
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
+                    class="text-[#8A8A8A] text-[20px] font-medium mb-[50px]">
                     Elearn is a global training provider based across the UK that
                     specialises in accredited and bespoke training courses. We crush
                     the...
                 </p>
-                <div class="h-[79px] rounded-full pl-[21px] flex items-center bg-white z-50 pr-[11px]">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
+                    class="h-[79px] rounded-full pl-[21px] flex items-center bg-white z-50 pr-[11px]">
                     <img src="/src/assets/search.svg" alt="" />
                     <input type="text" placeholder="Search for a location..."
                         class="ml-[12px] text-[20px] font-medium flex-1 border-none outline-none" />
@@ -57,7 +61,7 @@
                 </div>
             </div>
             <div class="flex-1">
-                <img src="/src/assets/main-img.png" alt="" />
+                <img src="/src/assets/main-img.png" alt="" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500" />
             </div>
         </div>
     </header>
@@ -67,7 +71,7 @@
         <div class="bg-[#4D2C5E] rounded-[14px] z-30 h-[277px] flex items-center justify-between px-[55px] gap-[50px]">
             <div class="flex-1 flex items-start gap-[25px] hover:cursor-pointer">
                 <div class="basis-[23%] bg-white/20 flex items-center justify-center h-[101px] rounded-[23px] cursor-pointer">
-                    <img src="/src/assets/compute.png" alt="" />
+                    <img src="/src/assets/compute.png" alt="" class="hover:scale-110 transition-all duration-300 ease-in-out" />
                 </div>
                 <div class="flex-1">
                     <h2 class="text-white text-[28px] font-bold mb-[16px]">
@@ -81,7 +85,7 @@
             </div>
             <div class="flex-1 flex items-start gap-[25px]">
                 <div class="basis-[23%] bg-white/20 flex items-center justify-center h-[101px] rounded-[23px] cursor-pointer">
-                    <img src="/src/assets/exam.png" alt="" />
+                    <img src="/src/assets/exam.png" alt="" class="hover:scale-110 transition-all duration-300 ease-in-out" />
                 </div>
                 <div class="flex-1">
                     <h2 class="text-white text-[28px] font-bold mb-[16px]">
@@ -95,7 +99,7 @@
             </div>
             <div class="flex-1 flex items-start gap-[25px]">
                 <div class="basis-[23%] bg-white/20 flex items-center justify-center h-[101px] rounded-[23px] cursor-pointer">
-                    <img src="/src/assets/certificate.png" alt="" />
+                    <img src="/src/assets/certificate.png" alt="" class="hover:scale-110 transition-all duration-300 ease-in-out" />
                 </div>
                 <div class="flex-1">
                     <h2 class="text-white text-[28px] font-bold mb-[16px]">
@@ -113,8 +117,8 @@
     <!-- our tracks -->
     <div class="container mx-auto pb-[126px] ">
         <div class="flex items-center justify-center flex-col mb-[65px] relative w-full">
-            <h1 class="text-[50px] font-semibold">Our Tracks</h1>
-            <p class="text-[#8A8A8A] text-[20px]">
+            <h1 class="text-[50px] font-semibold" data-aos="fade-up" data-aos-duration="1000">Our Tracks</h1>
+            <p class="text-[#8A8A8A] text-[20px]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                 Lorem Ipsum is simply dummy text of the printing.
             </p>
             <img src="./assets/light.png" alt="" class="absolute left-[-150px] top-0 animate-pulse duration-[5000ms]">
@@ -261,13 +265,13 @@
                 <img src="./assets/premium.png" alt="" class="h-[644px] w-auto mb-[-50px]" />
             </div>
             <div class="flex-1">
-                <h1 class="text-[69px] font-bold w-[90%] mb-[46px]">
+                <h1 class="text-[69px] font-bold w-[90%] mb-[46px]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                     Premium <span class="text-[#FF7426]">Learning</span> Experience
                 </h1>
                 <div>
-                    <div class="flex items-start gap-[23px] mb-[34px]">
+                    <div class="flex items-start gap-[23px] mb-[34px]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                         <div class="bg-[#4D2C5E] h-[101px] w-[101px] rounded-[23px] flex items-center justify-center">
-                            <img src="./assets/heart.svg" alt="" />
+                            <img src="./assets/heart.svg" alt="" class="cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out" />
                         </div>
                         <div>
                             <h2 class="text-[#050C26] text-[30px]">Easily Accessible</h2>
@@ -276,9 +280,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex items-start gap-[23px]">
+                    <div class="flex items-start gap-[23px]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
                         <div class="bg-[#4D2C5E] h-[101px] w-[101px] rounded-[23px] flex items-center justify-center">
-                            <img src="./assets/doc.svg" alt="" />
+                            <img src="./assets/doc.svg" alt="" class="cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out" />
                         </div>
                         <div>
                             <h2 class="text-[#050C26] text-[30px]">Easily Accessible</h2>
@@ -296,8 +300,8 @@
 
     <div class="container mx-auto mb-[60px]">
         <div class="flex items-center justify-center flex-col mb-[65px]">
-            <h1 class="text-[50px] font-semibold">What student’s say</h1>
-            <p class="text-[#8A8A8A] text-[20px]">
+            <h1 class="text-[50px] font-semibold" data-aos="fade-up" data-aos-duration="1000">What student’s say</h1>
+            <p class="text-[#8A8A8A] text-[20px]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                 Lorem Ipsum is simply dummy text of the printing.
             </p>
         </div>
@@ -401,8 +405,8 @@
     <div class="container mx-auto pb-[126px]">
         <div class="flex items-center justify-center flex-col mb-[65px] relative w-full
                                                                 ">
-            <h1 class="text-[50px] font-semibold">Our Tracks</h1>
-            <p class="text-[#8A8A8A] text-[20px]">
+            <h1 class="text-[50px] font-semibold" data-aos="fade-up" data-aos-duration="1000">Our Tracks</h1>
+            <p class="text-[#8A8A8A] text-[20px]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                 Lorem Ipsum is simply dummy text of the printing.
             </p>
             <img src="./assets/arrow3.png" alt="" class="absolute left-[-150px] top-0 ">
@@ -501,13 +505,14 @@
             <img src="./assets/newsletter-bg.jpg" alt="" class="w-full h-[100%] object-cover" />
             <div
                 class="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center justify-center flex-col">
-                <h1 class="text-white text-[40px] font-semibold mb-[13px]">
+                <h1 class="text-white text-[40px] font-semibold mb-[13px]" data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-delay="100">
                     Subscribe to our newsletter
                 </h1>
-                <p class="text-white text-[20px] mb-[41px]">
+                <p class="text-white text-[20px] mb-[41px]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                     Lorem Ipsum is simply dummy text of the printing.
                 </p>
-                <div
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"
                     class="bg-white h-[80px] rounded-full w-[610px] flex items-center justify-between overflow-hidden pl-[40px] pr-[7px]">
                     <input type="text" placeholder="Email Address"
                         class="h-[100%] w-full border-none outline-none text-[#ACACAC] text-[20px] rounded-full placeholder:text-[20px] placeholder:text-[#ACACAC]" />
@@ -517,7 +522,7 @@
                 </div>
             </div>
             <img src="./assets/arrow.png" class="absolute left-28 bottom-0" alt="">
-            <img src="./assets/light.png" class="absolute right-28 bottom-0" alt="">
+            <img src="./assets/light.png" class="absolute right-28 bottom-10 animate-pulse" alt="" >
 
         </div>
     </div>

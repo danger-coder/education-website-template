@@ -24,3 +24,5 @@ const swiper = new Swiper(".swiper", {
     hide: true,
   },
 });
+
+AOS.init();
