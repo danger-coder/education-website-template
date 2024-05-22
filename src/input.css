@@ -20,3 +20,23 @@ body{
   .swiper-button-prev ,.swiper-button-next{
 display: none !important;
   }
+
+  /* For Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+  width: 12px;               /* Width of the entire scrollbar */
+  height: 12px;              /* Height of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;       /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FF7426;    /* Background color of the scrollbar thumb */
+  border-radius: 10px;       /* Roundness of the scrollbar thumb */
+  border: 3px solid #f1f1f1; /* Creates padding around thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;          /* Color when hovered */
+}
