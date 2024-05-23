@@ -737,6 +737,10 @@ video {
   margin-top: -140px;
 }
 
+.mt-\[40px\] {
+  margin-top: 40px;
+}
+
 .flex {
   display: flex;
 }
@@ -761,12 +765,12 @@ video {
   height: 55%;
 }
 
-.h-\[644px\] {
-  height: 644px;
+.h-\[60px\] {
+  height: 60px;
 }
 
-.h-\[79px\] {
-  height: 79px;
+.h-\[644px\] {
+  height: 644px;
 }
 
 .h-\[80\%\] {
@@ -889,6 +893,10 @@ video {
 
 .gap-\[118px\] {
   gap: 118px;
+}
+
+.gap-\[150px\] {
+  gap: 150px;
 }
 
 .gap-\[16px\] {
@@ -1073,6 +1081,11 @@ video {
   padding-bottom: 21px;
 }
 
+.px-\[\] {
+  padding-left: ;
+  padding-right: ;
+}
+
 .pb-\[126px\] {
   padding-bottom: 126px;
 }
@@ -1097,8 +1110,8 @@ video {
   padding-bottom: 7px;
 }
 
-.pl-\[21px\] {
-  padding-left: 21px;
+.pl-\[10px\] {
+  padding-left: 10px;
 }
 
 .pl-\[32px\] {
@@ -1137,12 +1150,24 @@ video {
   padding-top: 13px;
 }
 
+.pt-\[20px\] {
+  padding-top: 20px;
+}
+
 .pt-\[41px\] {
   padding-top: 41px;
 }
 
 .pt-\[63px\] {
   padding-top: 63px;
+}
+
+.pt-\[\] {
+  padding-top: ;
+}
+
+.pt-\[50px\] {
+  padding-top: 50px;
 }
 
 .text-center {
@@ -1191,6 +1216,10 @@ video {
 
 .text-\[30px\] {
   font-size: 30px;
+}
+
+.text-\[35px\] {
+  font-size: 35px;
 }
 
 .text-\[40px\] {
@@ -1296,6 +1325,10 @@ video {
 
 .text-white\/60 {
   color: rgb(255 255 255 / 0.6);
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .shadow-lg {
@@ -1441,6 +1474,50 @@ body{
 }
 
 @media (min-width: 640px) {
+  .sm\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .sm\:mb-\[-50px\] {
+    margin-bottom: -50px;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:h-\[644px\] {
+    height: 644px;
+  }
+
+  .sm\:w-\[90\%\] {
+    width: 90%;
+  }
+
+  .sm\:w-\[101px\] {
+    width: 101px;
+  }
+
+  .sm\:flex-1 {
+    flex: 1 1 0%;
+  }
+
+  .sm\:basis-\[45\%\] {
+    flex-basis: 45%;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:items-start {
+    align-items: flex-start;
+  }
+
+  .sm\:gap-0 {
+    gap: 0px;
+  }
+
   .sm\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -1449,6 +1526,26 @@ body{
   .sm\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .sm\:pl-\[21px\] {
+    padding-left: 21px;
+  }
+
+  .sm\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .sm\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .sm\:text-\[50px\] {
+    font-size: 50px;
+  }
+
+  .sm\:text-\[69px\] {
+    font-size: 69px;
   }
 }
 
@@ -1463,6 +1560,10 @@ body{
 
   .md\:h-\[277px\] {
     height: 277px;
+  }
+
+  .md\:h-\[79px\] {
+    height: 79px;
   }
 
   .md\:w-\[610px\] {
