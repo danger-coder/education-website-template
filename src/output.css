@@ -1725,6 +1725,11 @@ body{
     padding-right: 30px;
   }
 
+  .lg\:px-\[55px\] {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
   .lg\:pb-0 {
     padding-bottom: 0px;
   }
@@ -1735,6 +1740,10 @@ body{
 }
 
 @media (min-width: 1280px) {
+  .xl\:items-center {
+    align-items: center;
+  }
+
   .xl\:px-\[\] {
     padding-left: ;
     padding-right: ;
