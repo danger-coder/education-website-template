@@ -1687,6 +1687,14 @@ body{
     gap: 60px;
   }
 
+  .lg\:gap-\[\] {
+    gap: ;
+  }
+
+  .lg\:gap-\[40px\] {
+    gap: 40px;
+  }
+
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -1697,11 +1705,43 @@ body{
     padding-right: 40px;
   }
 
+  .lg\:px-\[\] {
+    padding-left: ;
+    padding-right: ;
+  }
+
+  .lg\:px-\[15p\] {
+    padding-left: 15p;
+    padding-right: 15p;
+  }
+
+  .lg\:px-\[15px\] {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .lg\:px-\[30px\] {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .lg\:pb-0 {
     padding-bottom: 0px;
   }
 
   .lg\:pt-52 {
     padding-top: 13rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:px-\[\] {
+    padding-left: ;
+    padding-right: ;
+  }
+
+  .xl\:px-\[40px\] {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
