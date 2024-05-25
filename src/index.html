@@ -5,6 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <!-- jquery mmenu library added -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.6/jquery.mmenu.all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.6/jquery.mmenu.all.js"></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -17,13 +22,15 @@
         <img src="./assets/background.png" alt=""
             class="absolute top-[274px] w-[100%] h-[55%] left-1 object-contain scale-125"
             style="z-index: 1 !important" />
-        <div class="container mx-auto flex items-center justify-between py-3 pt-8 flex-wrap px-[15px] sm:px-0">
+        <div
+            class="container mx-auto flex items-center justify-between py-3 pt-8 flex-wrap sm:flex-row sm:flex md px-[15px]  sm:px-0 md:px-[15px]">
             <div class="cursor-pointer">
                 <img src="./assets/logo2.png" alt="" class="w-[174px]" />
             </div>
-            <div class=" items-center justify-between gap-[60px] hidden md:flex">
+            <div class=" items-center sm:justify-between  lg:gap-[60px] hidden md:flex">
                 <nav>
-                    <ul class="flex items-center gap-[45px] text-[16px] text-[#1D1D1D] font-semibold capitalize">
+                    <ul
+                        class="flex items-center sm:gap-[45px] md:gap-[19px] md:mr-[15px] lg:mr-0  lg:gap-[45px] text-[16px] text-[#1D1D1D] font-semibold capitalize">
                         <li class=""><a href="" class=" text-[#FF7426] ">Home</a></li>
                         <li><a href="" class="hover:text-[#FF7426] transition-colors duration-300">About us</a></li>
                         <li><a href="" class="hover:text-[#FF7426] transition-colors duration-300">Courses</a></li>
@@ -32,7 +39,7 @@
                     </ul>
                 </nav>
                 <div class="flex items-center gap-[20px] capitalize">
-                    <a href="" class="bg-[#4D2C5E] px-[40px] py-[15px] rounded-full text-[white] font-medium">Sign
+                    <a href="" class="bg-[#4D2C5E] sm:px-[20px] lg:px-[40px] py-[15px] rounded-full text-[white] font-medium">Sign
                         In</a>
                 </div>
             </div>
@@ -40,7 +47,7 @@
                 <img src="./assets/menu.png" class="w-[40px]" alt="">
             </div>
         </div>
-        <div class="container mx-auto flex items-start pt-10 md:pt-52 px-[15px] sm:px-0 relative flex-col md:flex-col lg:flex-row"
+        <div class="container mx-auto flex items-start pt-10 md:pt-14 lg:pt-52  px-[15px] sm:px-0 relative flex-col md:flex-col lg:flex-row"
             style="z-index: 2 !important">
             <div class="md:basis-[40%]  w-full">
                 <h1 class="text-[40px] sm:text-[69px]  font-extrabold" data-aos="fade-up" data-aos-duration="1000">
@@ -48,7 +55,7 @@
                     Choice For <span class="text-[#FF7426]">Future</span>
                 </h1>
                 <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
-                    class="text-[#8A8A8A] text-[20px] font-medium mb-[50px]  ">
+                    class="text-[#8A8A8A] text-[20px] font-medium mb-[50px]  w-[60%] lg:w-full">
                     Elearn is a global training provider based across the UK that
                     specialises in accredited and bespoke training courses. We crush
                     the...
@@ -74,7 +81,7 @@
     <div class="container mx-auto mt-[-140px] z-50 relative mb-[63px] md:px-[40px] px-[15px] "
         style="z-index: 3 !important">
         <div
-            class="bg-[#4D2C5E] rounded-[14px] z-30 md:h-[277px] flex items-center justify-between md:px-[55px] py-[10px] sm:py-0 px-[15px] gap-[50px] flex-col md:flex-col lg:flex-row">
+            class="bg-[#4D2C5E] rounded-[14px] z-30 lg:h-[277px] flex items-center justify-between md:px-[55px] py-[10px] sm:py-0 md:py-[40px] px-[15px] gap-[50px] flex-col md:flex-col lg:flex-row">
             <div
                 class="flex-1 flex sm:items-start gap-[25px] hover:cursor-pointer flex-col sm:flex-row justify-center items-center pt-[20px] sm:pt-0">
                 <div class="basis-[23%] bg-white/20 flex items-center justify-center h-[101px] rounded-[23px] cursor-pointer">
@@ -129,11 +136,11 @@
                 Lorem Ipsum is simply dummy text of the printing.
             </p>
             <img src="./assets/light.png" alt=""
-                class="absolute left-[-150px] top-0 animate-pulse duration-[5000ms] hidden md:block ">
-            <img src="./assets/arrow2.png" alt="" class="absolute right-[-150px] hidden md:block">
+                class="absolute left-[-150px] top-0 animate-pulse duration-[5000ms] hidden lg:block ">
+            <img src="./assets/arrow2.png" alt="" class="absolute right-[-150px] hidden lg:block">
         </div>
         <div
-            class="flex items-center justify-between pb-[50px] flex-col md:flex-col lg:flex-row px-[15px] sm:px-0 gap-[50px] sm:gap-0">
+            class="flex items-center justify-between pb-[50px] flex-col md:flex-col lg:flex-row px-[15px] sm:px-0 gap-[50px] sm:gap-0 md:gap-[50px] lg:gap-0">
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700"
                 class="bg-white shadow-lg rounded-[14px] hover:scale-105 transition-all duration-700 ease-out">
                 <div class="mb-[14px] px-[13px] pt-[13px] bg-white">
@@ -272,7 +279,8 @@
 
     <!-- premium learning exprience -->
     <div class="bg-[#FDF8EE] mb-[130px] ">
-        <div class="container mx-auto flex items-center pt-[63px] flex-col md:flex-col lg:flex-row">
+        <div
+            class="container mx-auto flex items-center pt-[63px] flex-col md:flex-col lg:flex-row px-[15px] lg:px-0 pb-[30px] lg:pb-0 gap-[50px] lg:gap-0">
             <div class="sm:basis-[45%] w-full">
                 <img src="./assets/premium.png" alt="" class="sm:h-[644px] w-auto sm:mb-[-50px]" />
             </div>
@@ -426,16 +434,17 @@
             <p class="text-[#8A8A8A] text-center text-[20px]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                 Lorem Ipsum is simply dummy text of the printing.
             </p>
-            <img src="./assets/arrow3.png" alt="" class="absolute left-[-150px] top-0  hidden md:block">
-            <img src="./assets/moon.png" alt="" class="absolute right-[-150px] hidden md:block ">
-            <img src="./assets/shape1.png" alt="" class="absolute left-[-250px] hidden md:block">
-            <img src="./assets/shape2.png" alt="" class="absolute right-[-250px] hidden md:block">
+            <img src="./assets/arrow3.png" alt="" class="absolute left-[-150px] top-0  hidden lg:block">
+            <img src="./assets/moon.png" alt="" class="absolute right-[-150px] hidden lg:block ">
+            <img src="./assets/shape1.png" alt="" class="absolute left-[-250px] hidden lg:block">
+            <img src="./assets/shape2.png" alt="" class="absolute right-[-250px] hidden lg:block">
 
         </div>
-        <div class="flex items-center justify-between gap-[30px] pb-[50px] flex-col md:flex-col lg:flex-row px-[15px] sm:px-0">
+        <div
+            class="flex items-center justify-between gap-[30px] pb-[50px] flex-col md:flex-col lg:flex-row px-[15px] sm:px-0 md:px-[15%] lg:px-0">
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700"
                 class="bg-white cursor-pointer flex-1 shadow-lg rounded-[14px] hover:scale-105 transition-all duration-700 ease-out">
-                <div class="mb-[14px] px-[13px] pt-[13px] bg-white">
+                <div class="mb-[14px] px-[13px] pt-[13px] bg-white ">
                     <img src="./assets/g1.png" alt="" class="w-full" />
                 </div>
                 <div class="w-full">
@@ -518,8 +527,9 @@
     </div>
     <!-- newsletter section -->
     <div class="container mx-auto sm:px-[20px] mb-[126px] ">
-        <div class="w-full sm:min-h-[429px] h-[600px] relative ">
-            <img src="./assets/newsletter-bg.jpg" alt="" class="w-full h-[100%] sm:object-contain object-cover" />
+        <div class="w-full sm:h-[429px] md:h-[500px] h-[600px] relative ">
+            <img src="./assets/newsletter-bg.jpg" alt=""
+                class="w-full h-[100%] sm:object-contain md:object-cover object-cover" />
             <div
                 class="absolute w-full px-[15px]  left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center justify-center flex-col">
                 <h1 class="text-white text-[32px] sm:text-[40px] font-semibold mb-[13px]" data-aos="fade-up" data-aos-duration="1000"
@@ -539,13 +549,13 @@
                     </button>
                 </div>
             </div>
-            <img src="./assets/arrow.png" class="absolute left-28 bottom-20 hidden md:block" alt="">
-            <img src="./assets/light.png" class="absolute right-28 bottom-14 animate-pulse hidden md:block" alt="">
+            <img src="./assets/arrow.png" class="absolute left-28 bottom-20 md:bottom-0 hidden md:block" alt="">
+            <img src="./assets/light.png" class="absolute right-28 bottom-14 md:bottom-0 animate-pulse hidden md:block" alt="">
 
         </div>
     </div>
 
-    <div class="bg-[#FDF8EE]  px-[15px] sm:px-0 ">
+    <div class="bg-[#FDF8EE]  px-[15px] sm:px-0 md:px-[15px] lg:px-0 ">
         <div class="border-b border-b-[#B7B7B7] pb-[65px]">
             <div class="container mx-auto flex pt-[41px] gap-[118px] flex-col md:flex-col lg:flex-row">
                 <div class="basis-[22%]">
@@ -558,7 +568,8 @@
                         specimen book.
                     </p>
                     </div>
-                    <div class="flex-1  flex items-start justify-between gap-[104px] flex-col md:flex-col lg:flex-row">
+                    <div
+                        class="flex-1 md:grid md:grid-cols-2 lg:flex flex items-start justify-between gap-[104px] flex-col md:flex-col lg:flex-row">
                         <div>
                             <h2 class="text-[#00052E] text-[25px] font-semibold mb-[29px]">Company</h2>
                             <ul class="space-y-[27px]">
