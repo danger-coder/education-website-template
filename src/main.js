@@ -44,3 +44,26 @@ const swiper = new Swiper(".swiper", {
 });
 
 AOS.init();
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Select the menu element
+  var menu = document.querySelector("#menu");
+
+  // Clone the menu
+  var clonedMenu = menu.cloneNode(true);
+
+  // Select the div where you want to append the cloned menu
+  var targetDiv = document.querySelector("#mbl_menu");
+
+  // Append the cloned menu to the target div
+  targetDiv.appendChild(clonedMenu);
+});
+
+$(document).ready(function () {
+  $("#mbl_menu #menu").mmenu({
+    slidingSubmenus: false,
+    navbar: { add: false },
+  });
+});
+

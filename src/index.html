@@ -17,6 +17,11 @@
 </head>
 
 <body class="">
+<div id="mbl_menu"></div>
+
+<div id="page" >
+
+
     <!-- navbar -->
     <header class="w-full bg-[#FDF8EE] relative pb-[250px] overflow-x-hidden">
         <img src="./assets/background.png" alt=""
@@ -28,7 +33,7 @@
                 <img src="./assets/logo2.png" alt="" class="w-[174px]" />
             </div>
             <div class=" items-center sm:justify-between  lg:gap-[60px] hidden md:flex">
-                <nav>
+                <nav id="menu">
                     <ul
                         class="flex items-center sm:gap-[45px] md:gap-[19px] md:mr-[15px] lg:mr-0  lg:gap-[45px] text-[16px] text-[#1D1D1D] font-semibold capitalize">
                         <li class=""><a href="" class=" text-[#FF7426] ">Home</a></li>
@@ -44,7 +49,7 @@
                 </div>
             </div>
             <div class=" block sm:hidden pr-[10px]">
-                <img src="./assets/menu.png" class="w-[40px]" alt="">
+                <a href="#menu"> <img src="./assets/menu.png" class="w-[40px]" alt=""></a>
             </div>
         </div>
         <div class="container mx-auto flex items-start pt-10 md:pt-14 lg:pt-52  px-[15px] sm:px-0 relative flex-col md:flex-col lg:flex-row"
@@ -76,6 +81,8 @@
             </div>
         </div>
     </header>
+<!-- <div id="mbl_menu" class="hidden"></div> -->
+
 
     <!-- category section -->
     <div class="container mx-auto mt-[-140px] z-50 relative mb-[63px] md:px-[40px] px-[15px] "
@@ -619,6 +626,7 @@
                 2022</p>
         </div>
     </div>
+</div>
 
     <script src="./main.js"></script>
 </body>
