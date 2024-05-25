@@ -1,3 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+
+.swiper {
+    width: 100%;
+    height: 300px;
+    padding-left: 20px !important;
+    padding-right: 10px !important;
+  }
+
+  .swiper-button-prev ,.swiper-button-next{
+/* display: none !important; */
+top: 42% !important;
+/* left:0% !important ; */
+  }
+  .swiper-button-prev{
+    left: 0% !important;
+  }
+  .swiper-button-next{
+    right: 0% !important;
+  }
+
+  /* For Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+  width: 12px;               /* Width of the entire scrollbar */
+  height: 12px;              /* Height of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;       /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FF7426;    /* Background color of the scrollbar thumb */
+  border-radius: 10px;       /* Roundness of the scrollbar thumb */
+  border: 3px solid #f1f1f1; /* Creates padding around thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;          /* Color when hovered */
+}

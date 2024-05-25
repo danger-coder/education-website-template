@@ -1,32 +1,632 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/src/output.css" rel="stylesheet">
-</head>
-<body>
-<!-- navbar -->
-<div class="container-fluid mx-auto flex items-center justify-between py-3 px-[5%] border-b">
-    <div class="flex items-center justify-between">
-        <div>
-            <img src="./assets/logo.png" alt="" class="w-[60%]">
-        </div>
-        <nav>
-            <ul class="flex items-center gap-[35px] text-[16px] uppercase pt-[20px]">
-                <li><a href="" class=" ">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">course</a></li>
-                <li><a href="">blog</a></li>
-                <li><a href="">contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="flex items-center gap-[20px] capitalize">
-        <a href="" class="font-medium text-[16px]">Sign In</a>
-        <a href="" class="bg-[#C1272D] px-[20px] py-[15px] text-[white] font-medium">Sign Up</a>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <!-- jquery mmenu library added -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.6/jquery.mmenu.all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.6/jquery.mmenu.all.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class="">
+<div id="mbl_menu"></div>
+
+<div id="page" class="overflow-x-hidden" >
+
+
+    <!-- navbar -->
+    <header class="w-full bg-[#FDF8EE] relative pb-[250px] overflow-x-hidden">
+        <img src="./assets/background.png" alt=""
+            class="absolute top-[274px] w-[100%] h-[55%] left-1 object-contain scale-125"
+            style="z-index: 1 !important" />
+        <div
+            class="container mx-auto flex items-center justify-between py-3 pt-8 flex-wrap sm:flex-row sm:flex md px-[15px]  sm:px-0 md:px-[15px] ">
+            <div class="cursor-pointer">
+                <img src="./assets/logo2.png" alt="" class="w-[174px]" />
+            </div>
+            <div class=" items-center sm:justify-between  lg:gap-[60px] hidden md:flex">
+                <nav id="menu">
+                    <ul
+                        class="flex items-center sm:gap-[45px] md:gap-[19px] md:mr-[15px] lg:mr-0  lg:gap-[45px] text-[16px] text-[#1D1D1D] font-semibold capitalize">
+                        <li class=""><a href="" class=" text-[#FF7426] ">Home</a></li>
+                        <li><a href="about.html" class="hover:text-[#FF7426] transition-colors duration-300">About us</a></li>
+                        <li><a href="#courses" class="hover:text-[#FF7426] transition-colors duration-300">Courses</a></li>
+                        <li><a href="" class="hover:text-[#FF7426] transition-colors duration-300">Our Service</a></li>
+                        <li><a href="" class="hover:text-[#FF7426] transition-colors duration-300">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="flex items-center gap-[20px] capitalize">
+                    <a href="" class="bg-[#4D2C5E] hover:bg-[#FF7426] transition-colors duration-300 ease-out sm:px-[20px] lg:px-[40px] py-[15px] rounded-full text-[white] font-medium">Sign
+                        In</a>
+                </div>
+            </div>
+            <div class=" block sm:hidden pr-[10px]">
+                <a href="#menu"> <img src="./assets/menu.png" class="w-[40px]" alt=""></a>
+            </div>
+        </div>
+        <div class="container mx-auto flex items-start pt-10 md:pt-14 lg:pt-52  px-[15px] sm:px-0 lg:px-[40px] relative flex-col md:flex-col lg:flex-row"
+            style="z-index: 2 !important">
+            <div class="md:basis-[40%]  w-full">
+                <h1 class="text-[40px] sm:text-[69px]  font-extrabold" data-aos="fade-up" data-aos-duration="1000">
+                    The <span class="text-[#FF7426]">Smart</span> <br />
+                    Choice For <span class="text-[#FF7426]">Future</span>
+                </h1>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
+                    class="text-[#8A8A8A] text-[20px] font-medium mb-[50px]  w-[100%] lg:w-full">
+                    Elearn is a global training provider based across the UK that
+                    specialises in accredited and bespoke training courses. We crush
+                    the...
+                </p>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
+                    class="h-[60px] md:h-[79px] rounded-full w-[100%] overflow-x-hidden pl-[10px] sm:pl-[21px] flex items-center bg-white z-50 pr-[11px] ">
+                    <img src="./assets/search.svg" alt="" />
+                    <input type="text" placeholder="Search for a location..."
+                        class="ml-[12px] text-[16px] md:text-[20px] font-medium sm:flex-1 border-none outline-none w-full" />
+                    <!-- <input type="text"> -->
+                    <button class="bg-[#4D2C5E] hover:bg-[#FF7426] transition-colors duration-300 ease-out rounded-full h-[80%] px-[20px] text-[16px] md:text-[25px] font-medium text-white">
+                        Continue
+                    </button>
+                </div>
+            </div>
+            <div class="md:flex-1 mt-[40px] sm:mt-0">
+                <img src="./assets/main-img.png" alt="" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500" />
+            </div>
+        </div>
+    </header>
+
+    <!-- category section -->
+    <div class="container mx-auto mt-[-140px] z-50 relative mb-[63px] md:px-[40px]  px-[15px] "
+        style="z-index: 3 !important">
+        <div
+            class="bg-[#4D2C5E] rounded-[14px] z-30 lg:h-[277px] flex items-start xl:items-center justify-between md:px-[55px] lg:px-[55px] py-[10px] sm:py-0 md:py-[40px] px-[15px] gap-[50px] flex-col md:flex-col lg:flex-row">
+            <div
+                class="flex-1 flex sm:items-start gap-[25px] hover:cursor-pointer flex-col sm:flex-row justify-center items-center pt-[20px] sm:pt-0">
+                <div class="basis-[23%] bg-white/20 flex items-center justify-center h-[101px] rounded-[23px] cursor-pointer">
+                    <img src="./assets/compute.png" alt="" class="hover:scale-110 transition-all duration-300 ease-in-out" />
+                </div>
+                <div class="flex-1">
+                    <h2 class="text-white text-[28px] font-bold mb-[16px]">
+                        Learn The Latest Skills
+                    </h2>
+                    <p class="text-white/60 text-[15px] font-medium">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        It has roots in a BC, making it over 2000 years old.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-1 flex sm:items-start gap-[25px] flex-col sm:flex-row items-center">
+                <div class="basis-[23%] bg-white/20 flex items-center justify-center h-[101px] rounded-[23px] cursor-pointer">
+                    <img src="./assets/exam.png" alt="" class="hover:scale-110 transition-all duration-300 ease-in-out" />
+                </div>
+                <div class="flex-1">
+                    <h2 class="text-white text-[28px] font-bold mb-[16px]">
+                        Get Ready For a Career
+                    </h2>
+                    <p class="text-white/60 text-[15px] font-medium">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        It has roots in a BC, making it over 2000 years old.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-1 flex items-start gap-[25px] flex-col sm:flex-row ">
+                <div class="basis-[23%] bg-white/20 flex items-center justify-center h-[101px] rounded-[23px] cursor-pointer">
+                    <img src="./assets/certificate.png" alt="" class="hover:scale-110 transition-all duration-300 ease-in-out" />
+                </div>
+                <div class="flex-1">
+                    <h2 class="text-white text-[28px] font-bold mb-[16px]">
+                        Earn a Certificate
+                    </h2>
+                    <p class="text-white/60 text-[15px] font-medium">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        It has roots in a BC, making it over 2000 years old.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- our Courses -->
+    <div class="container mx-auto pb-[126px] " id="courses">
+        <div class="flex items-center justify-center flex-col mb-[65px] relative w-full">
+            <h1 class="text-[35px] sm:text-[50px]  font-semibold" data-aos="fade-up" data-aos-duration="1000">Our Courses</h1>
+            <p class="text-[#8A8A8A] sm:text-[20px] text-[16px]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                Lorem Ipsum is simply dummy text of the printing.
+            </p>
+            <img src="./assets/light.png" alt=""
+                class="absolute left-[-150px] top-0 animate-pulse duration-[5000ms] hidden lg:block ">
+            <img src="./assets/arrow2.png" alt="" class="absolute right-[-150px] hidden lg:block">
+        </div>
+        <div
+            class="flex items-center justify-between pb-[50px] flex-col md:flex-col lg:flex-row px-[15px] sm:px-0 lg:px-[30px] gap-[50px] sm:gap-0 md:gap-[50px] lg:gap-[40px]">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700"
+                class="bg-white shadow-lg rounded-[14px] hover:scale-105 transition-all duration-700 ease-out">
+                <div class="mb-[14px] px-[13px] pt-[13px] bg-white">
+                    <img src="./assets/track1.png" alt="" class="w-full" />
+                </div>
+                <div>
+                    <div class="bg-white pb-[24px] px-[13px]">
+                        <div class="flex items-center justify-between mb-[3px]">
+                            <p class="text-[#ACACAC] text-[16px]">UI/UX Design</p>
+                            <div class="flex items-center">
+                                <img src="./assets/star-dark.png" alt="" />
+                                <img src="./assets/star-dark.png" alt="" />
+                                <img src="./assets/star-dark.png" alt="" />
+                                <img src="./assets/star-dark.png" alt="" />
+                                <img src="./assets/start-light.png" alt="" />
+                            </div>
+                        </div>
+                        <h2 class="text-[20px] text-black">UI/UX Design for Beginners</h2>
+                        <p class="text-[#FF7426] font-bold border-b border-dashed mb-[16px] pb-[7px]">
+                            $98
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-[6px]">
+                                <img src="./assets/time.svg" alt="" />
+                                <p class="text-[#ACACAC] text-[16px] font-bold">22hr 30min</p>
+                            </div>
+                            <div class="flex items-center gap-[6px]">
+                                <img src="./assets/video.svg" alt="" />
+                                <p class="text-[#ACACAC] text-[16px] font-bold">34 Courses</p>
+                            </div>
+                            <div class="flex items-center gap-[6px]">
+                                <img src="./assets/donwload.svg" alt="" />
+                                <p class="text-[#ACACAC] text-[16px] font-bold">250 Sales</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button
+                            class="bg-[#FF7426] py-[13px] px-[36px] mb-[-27px] rounded-full text-white font-bold flex items-center justify-center">
+                            Join Course
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900"
+                class="bg-white shadow-lg rounded-[14px] hover:scale-105 transition-all duration-700 ease-out">
+                <div class="mb-[14px] px-[13px] pt-[13px] bg-white">
+                    <img src="./assets/track2.png" alt="" class="w-full" />
+                </div>
+                <div>
+                    <div class="bg-white pb-[24px] px-[13px]">
+                        <div class="flex items-center justify-between mb-[3px]">
+                            <p class="text-[#ACACAC] text-[16px]">UI/UX Design</p>
+                            <div class="flex items-center">
+                                <img src="./assets/star-dark.png" alt="" />
+                                <img src="./assets/star-dark.png" alt="" />
+                                <img src="./assets/star-dark.png" alt="" />
+                                <img src="./assets/star-dark.png" alt="" />
+                                <img src="./assets/start-light.png" alt="" />
+                            </div>
+                        </div>
+                        <h2 class="text-[20px] text-black">UI/UX Design for Beginners</h2>
+                        <p class="text-[#FF7426] font-bold border-b border-dashed mb-[16px] pb-[7px]">
+                            $98
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-[6px]">
+                                <img src="./assets/time.svg" alt="" />
+                                <p class="text-[#ACACAC] text-[16px] font-bold">22hr 30min</p>
+                            </div>
+                            <div class="flex items-center gap-[6px]">
+                                <img src="./assets/video.svg" alt="" />
+                                <p class="text-[#ACACAC] text-[16px] font-bold">34 Courses</p>
+                            </div>
+                            <div class="flex items-center gap-[6px]">
+                                <img src="./assets/donwload.svg" alt="" />
+                                <p class="text-[#ACACAC] text-[16px] font-bold">250 Sales</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button
+                            class="bg-[#FF7426] py-[13px] px-[36px] mb-[-27px] rounded-full text-white font-bold flex items-center justify-center">
+                            Join Course
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100"
+                class="bg-white shadow-lg rounded-[14px] hover:scale-105 transition-all duration-700 ease-out">
+                <div class="mb-[14px] px-[13px] pt-[13px] bg-white">
+                    <img src="./assets/track3.png" alt="" class="w-full" />
+                </div>
+                <div>
+                    <div class="bg-white pb-[24px] px-[13px]">
+                        <div class="flex items-center justify-between mb-[3px]">
+                            <p class="text-[#ACACAC] text-[16px]">UI/UX Design</p>
+                            <div class="flex items-center">
+                                <img src="./assets/star-dark.png" alt="" />
+                                <img src="./assets/star-dark.png" alt="" />
+                                <img src="./assets/star-dark.png" alt="" />
+                                <img src="./assets/star-dark.png" alt="" />
+                                <img src="./assets/start-light.png" alt="" />
+                            </div>
+                        </div>
+                        <h2 class="text-[20px] text-black">UI/UX Design for Beginners</h2>
+                        <p class="text-[#FF7426] font-bold border-b border-dashed mb-[16px] pb-[7px]">
+                            $98
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-[6px]">
+                                <img src="./assets/time.svg" alt="" />
+                                <p class="text-[#ACACAC] text-[16px] font-bold">22hr 30min</p>
+                            </div>
+                            <div class="flex items-center gap-[6px]">
+                                <img src="./assets/video.svg" alt="" />
+                                <p class="text-[#ACACAC] text-[16px] font-bold">34 Courses</p>
+                            </div>
+                            <div class="flex items-center gap-[6px]">
+                                <img src="./assets/donwload.svg" alt="" />
+                                <p class="text-[#ACACAC] text-[16px] font-bold">250 Sales</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button
+                            class="bg-[#FF7426] py-[13px] px-[36px] mb-[-27px] rounded-full text-white font-bold flex items-center justify-center">
+                            Join Course
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- premium learning exprience -->
+    <div class="bg-[#FDF8EE] mb-[130px] ">
+        <div
+            class="container mx-auto flex items-center pt-[63px] flex-col md:flex-col lg:flex-row px-[15px] lg:px-[15px] pb-[30px] lg:pb-0 gap-[50px] lg:gap-0">
+            <div class="sm:basis-[45%] w-full">
+                <img src="./assets/premium.png" alt="" class="sm:h-[644px] w-auto sm:mb-[-50px]" />
+            </div>
+            <div class="flex-1 pt-[50px] sm:pt-0 px-[15px] sm:px-0">
+                <h1 class="sm:text-[69px] text-[40px] font-bold sm:w-[90%] w-full mb-[46px]" data-aos="fade-up"
+                    data-aos-duration="1000" data-aos-delay="300">
+                    Premium <span class="text-[#FF7426]">Learning</span> Experience
+                </h1>
+                <div>
+                    <div class="flex flex-col sm:flex-row items-start gap-[23px] mb-[34px]" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="500">
+                        <div class="bg-[#4D2C5E] h-[101px] w-[101px]  rounded-[23px] flex items-center justify-center">
+                            <img src="./assets/heart.svg" alt="" class="cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out" />
+                        </div>
+                        <div>
+                            <h2 class="text-[#050C26] text-[30px]">Easily Accessible</h2>
+                            <p class="text-[#8A8A8A] text-[26px]">
+                                Learning Will fell Very Comfortable With Courslab.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-start gap-[23px]" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-delay="900">
+                        <div class="bg-[#4D2C5E] h-[101px] w-[101px]  rounded-[23px] flex items-center justify-center">
+                            <img src="./assets/doc.svg" alt="" class="cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out" />
+                        </div>
+                        <div>
+                            <h2 class="text-[#050C26] text-[30px]">Easily Accessible</h2>
+                            <p class="text-[#8A8A8A] text-[26px]">
+                                Learning Will fell Very Comfortable With Courslab.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- what student's say -->
+
+    <div class="container mx-auto mb-[60px] ">
+        <div class="flex items-center justify-center flex-col mb-[65px]">
+            <h1 class=" text-[40px] sm:text-[50px] text-center font-semibold" data-aos="fade-up" data-aos-duration="1000">What
+                student’s say</h1>
+            <p class="text-[#8A8A8A] text-center text-[16px] sm:text-[20px]" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="300">
+                Lorem Ipsum is simply dummy text of the printing.
+            </p>
+        </div>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+
+                <div class="swiper-slide">
+                    <div
+                        class="bg-white shadow-lg h-[258px] flex w-[97%] hover:scale-105 transition-all duration-700 ease-out cursor-pointer flex-col justify-center items-start pl-[32px] gap-[24px] pr-[32px]">
+                        <p class="text-[#ACACAC] text-[19px]">
+                            “Teachings of the great explore of truth, the master-builder of
+                            human happiness. no one rejects,dislikes, or avoids pleasure
+                            itself, pleasure itself”
+                        </p>
+                        <div class="flex items-center gap-[16px]">
+                            <div>
+                                <img src="./assets/student.png" alt="" />
+                            </div>
+                            <div>
+                                <h2 class="text-[#353535] text-[17px]">Finlay Kirk</h2>
+                                <p class="text-[#8E8E8E] text-[13px]">Web Developper</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div
+                        class="bg-white shadow-xl h-[258px] flex w-[97%] hover:scale-105 transition-all duration-700 ease-out cursor-pointer flex-col justify-center items-start pl-[32px] gap-[24px] pr-[32px]">
+                        <p class="text-[#ACACAC] text-[19px]">
+                            “Teachings of the great explore of truth, the master-builder of
+                            human happiness. no one rejects,dislikes, or avoids pleasure
+                            itself, pleasure itself”
+                        </p>
+                        <div class="flex items-center gap-[16px]">
+                            <div>
+                                <img src="./assets/student.png" alt="" />
+                            </div>
+                            <div>
+                                <h2 class="text-[#353535] text-[17px]">Finlay Kirk</h2>
+                                <p class="text-[#8E8E8E] text-[13px]">Web Developper</p>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                        class="bg-white shadow-lg h-[258px] flex w-[97%] hover:scale-105 transition-all duration-700 ease-out cursor-pointer flex-col justify-center items-start pl-[32px] gap-[24px] pr-[32px]">
+                        <p class="text-[#ACACAC] text-[19px]">
+                            “Teachings of the great explore of truth, the master-builder of
+                            human happiness. no one rejects,dislikes, or avoids pleasure
+                            itself, pleasure itself”
+                        </p>
+                        <div class="flex items-center gap-[16px]">
+                            <div>
+                                <img src="./assets/student.png" alt="" />
+                            </div>
+                            <div>
+                                <h2 class="text-[#353535] text-[17px]">Finlay Kirk</h2>
+                                <p class="text-[#8E8E8E] text-[13px]">Web Developper</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div
+                        class="bg-white shadow-lg h-[258px] flex w-[97%] hover:scale-105 transition-all duration-700 ease-out cursor-pointer flex-col justify-center items-start pl-[32px] gap-[24px] pr-[32px]">
+                        <p class="text-[#ACACAC] text-[19px]">
+                            “Teachings of the great explore of truth, the master-builder of
+                            human happiness. no one rejects,dislikes, or avoids pleasure
+                            itself, pleasure itself”
+                        </p>
+                        <div class="flex items-center gap-[16px]">
+                            <div>
+                                <img src="./assets/student.png" alt="" />
+                            </div>
+                            <div>
+                                <h2 class="text-[#353535] text-[17px]">Finlay Kirk</h2>
+                                <p class="text-[#8E8E8E] text-[13px]">Web Developper</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+
+    <!-- our tracks -->
+    <div class="container mx-auto pb-[126px] ">
+        <div class="flex items-center justify-center flex-col mb-[65px] relative w-full
+                                                                ">
+            <h1 class=" text-[40px] sm:text-[50px] font-semibold" data-aos="fade-up" data-aos-duration="1000">Our Tracks</h1>
+            <p class="text-[#8A8A8A] text-center text-[20px]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                Lorem Ipsum is simply dummy text of the printing.
+            </p>
+            <img src="./assets/arrow3.png" alt="" class="absolute left-[-150px] top-0  hidden lg:block">
+            <img src="./assets/moon.png" alt="" class="absolute right-[-150px] hidden lg:block ">
+            <img src="./assets/shape1.png" alt="" class="absolute left-[-250px] hidden lg:block">
+            <img src="./assets/shape2.png" alt="" class="absolute right-[-250px] hidden lg:block">
+
+        </div>
+        <div
+            class="flex items-center justify-between gap-[30px] pb-[50px] flex-col md:flex-col lg:flex-row px-[15px] sm:px-0 md:px-[15%] lg:px-[30px]">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700"
+                class="bg-white cursor-pointer flex-1 shadow-lg rounded-[14px] hover:scale-105 transition-all duration-700 ease-out">
+                <div class="mb-[14px] px-[13px] pt-[13px] bg-white ">
+                    <img src="./assets/g1.png" alt="" class="w-full" />
+                </div>
+                <div class="w-full">
+                    <div class="bg-white pb-[24px] px-[13px] w-full">
+                        <h2 class="text-[20px] text-black">Matthew E. McNatt</h2>
+                        <p class="text-[#868686] font-medium mb-[16px] pb-[7px]">
+                            Professor @George Brown College
+                        </p>
+                        <p class="text-[#ACACAC] text-[18px] pr-[50px] mb-[22px]">
+                            Ut enim ad minim veniam, quis nost exercitation ullamco laboris
+                            nisi ut allquip ex commodo.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-[18px] text-[#FF7426]">Engineering physics</p>
+                            </div>
+                            <div class="flex items-center gap-[28px]">
+                                <img src="./assets/linkedin.png" alt="" />
+                                <img src="./assets/instagram.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900"
+                class="bg-white cursor-pointer flex-1 shadow-lg rounded-[14px] hover:scale-105 transition-all duration-700 ease-out">
+                <div class="mb-[14px] px-[13px] pt-[13px] bg-white">
+                    <img src="./assets/g2.png" alt="" class="w-full" />
+                </div>
+                <div class="w-full">
+                    <div class="bg-white pb-[24px] px-[13px] w-full">
+                        <h2 class="text-[20px] text-black">Matthew E. McNatt</h2>
+                        <p class="text-[#868686] font-medium mb-[16px] pb-[7px]">
+                            Professor @George Brown College
+                        </p>
+                        <p class="text-[#ACACAC] text-[18px] pr-[50px] mb-[22px]">
+                            Ut enim ad minim veniam, quis nost exercitation ullamco laboris
+                            nisi ut allquip ex commodo.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-[18px] text-[#FF7426]">Engineering physics</p>
+                            </div>
+                            <div class="flex items-center gap-[28px]">
+                                <img src="./assets/linkedin.png" alt="" />
+                                <img src="./assets/instagram.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100"
+                class="bg-white cursor-pointer flex-1 shadow-lg rounded-[14px] hover:scale-105 transition-all duration-700 ease-out">
+                <div class="mb-[14px] px-[13px] pt-[13px] bg-white">
+                    <img src="./assets/g3.png" alt="" class="w-full" />
+                </div>
+                <div class="w-full">
+                    <div class="bg-white pb-[24px] px-[13px] w-full">
+                        <h2 class="text-[20px] text-black">Matthew E. McNatt</h2>
+                        <p class="text-[#868686] font-medium mb-[16px] pb-[7px]">
+                            Professor @George Brown College
+                        </p>
+                        <p class="text-[#ACACAC] text-[18px] pr-[50px] mb-[22px]">
+                            Ut enim ad minim veniam, quis nost exercitation ullamco laboris
+                            nisi ut allquip ex commodo.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-[18px] text-[#FF7426]">Engineering physics</p>
+                            </div>
+                            <div class="flex items-center gap-[28px]">
+                                <img src="./assets/linkedin.png" alt="" />
+                                <img src="./assets/instagram.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- newsletter section -->
+    <div class="container mx-auto sm:px-[20px] mb-[126px] ">
+        <div class="w-full sm:h-[429px] md:h-[500px] h-[600px] relative ">
+            <img src="./assets/newsletter-bg.jpg" alt=""
+                class="w-full h-[100%] sm:object-contain md:object-cover object-cover" />
+            <div
+                class="absolute w-full px-[15px]  left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center justify-center flex-col">
+                <h1 class="text-white text-[32px] sm:text-[40px] font-semibold mb-[13px]" data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-delay="100">
+                    Subscribe to our newsletter
+                </h1>
+                <p class="text-white text-[16px] sm:text-[20px] mb-[41px]" data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-delay="300">
+                    Lorem Ipsum is simply dummy text of the printing.
+                </p>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"
+                    class="bg-white h-[60px] sm:h-[80px] rounded-full  md:w-[610px] flex items-center justify-between overflow-hidden pl-[40px] pr-[7px]">
+                    <input type="text" placeholder="Email Address"
+                        class="h-[100%] w-full border-none outline-none text-[#ACACAC] text-[16px] sm:text-[20px] rounded-full placeholder:text-[20px] placeholder:text-[#ACACAC]" />
+                    <button class="bg-[#FF7426] h-[88%] px-[30px] sm:px-[71px] rounded-full text-white text-[16px] sm:text-[20px] font-medium">
+                        Send
+                    </button>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" class="absolute left-28 bottom-20 md:bottom-0 hidden md:block" alt="">
+            <img src="./assets/light.png" class="absolute right-28 bottom-14 md:bottom-0 animate-pulse hidden md:block" alt="">
+
+        </div>
+    </div>
+
+    <div class="bg-[#FDF8EE]  px-[15px] sm:px-0 md:px-[15px] lg:px-[30px] ">
+        <div class="border-b border-b-[#B7B7B7] pb-[65px]">
+            <div class="container mx-auto flex pt-[41px] gap-[118px] flex-col md:flex-col lg:flex-row">
+                <div class="basis-[22%]">
+                    <div class="pb-[24px] cursor-pointer">
+                        <img src="./assets/logo2.png" alt="" />
+                    </div>
+                    <p class="text-[#606060] text-[19px] leading-[35px]">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy a type
+                        specimen book.
+                    </p>
+                    </div>
+                    <div
+                        class="flex-1 md:grid md:grid-cols-2 lg:flex flex items-start justify-between gap-[104px] flex-col md:flex-col lg:flex-row">
+                        <div>
+                            <h2 class="text-[#00052E] text-[25px] font-semibold mb-[29px]">Company</h2>
+                            <ul class="space-y-[27px]">
+                                <li><a class="text-[#606060] text-[19px]" href="">About Us</a></li>
+                                <li><a class="text-[#606060] text-[19px]" href="">How to work?</a></li>
+                                <li><a class="text-[#606060] text-[19px]" href="">Popular Course</a></li>
+                                <li><a class="text-[#606060] text-[19px]" href="">Service</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div>
+                            <h2 class="text-[#00052E] text-[25px] font-semibold mb-[29px]">Courses</h2>
+                            <ul class="space-y-[27px]">
+                                <li><a class="text-[#606060] text-[19px]" href="">Categories</a></li>
+                                <li><a class="text-[#606060] text-[19px]" href="">Offline Course</a></li>
+                                <li><a class="text-[#606060] text-[19px]" href="">Video Course</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div>
+                            <h2 class="text-[#00052E] text-[25px] font-semibold mb-[29px]">Support</h2>
+                            <ul class="space-y-[27px]">
+                                <li><a class="text-[#606060] text-[19px]" href="">FAQ</a></li>
+                                <li><a class="text-[#606060] text-[19px]" href="">Help Center</a></li>
+                                <li><a class="text-[#606060] text-[19px]" href="">Career</a></li>
+                                <li><a class="text-[#606060] text-[19px]" href="">Privacy</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div>
+                            <h2 class="text-[#00052E] text-[25px] font-semibold mb-[29px]">Contact Info</h2>
+                            <ul class="space-y-[29px]">
+                                <li><a class="text-[#606060] text-[19px]" href="">+0913-705-3875</a></li>
+                                <li><a class="text-[#606060] text-[19px]" href="">ElizabethJ@jourrapide.com</a></li>
+                                <li>
+                                <a class="text-[#606060] text-[19px] " href="">4808 Skinner Hollow Road <br>Days Creek,
+                                    OR
+                                    97429</a>
+                                </li>
+                                </ul>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="flex items-center justify-center">
+            <p class="text-[#606060] text-[19px] text-center py-[21px] cursor-pointer">Education All Right Reserved,
+                2022</p>
+        </div>
     </div>
 </div>
+
+    <script src="./main.js"></script>
 </body>
+
 </html>
