@@ -797,14 +797,6 @@ video {
   width: 40px;
 }
 
-.w-\[60\%\] {
-  width: 60%;
-}
-
-.w-\[90\%\] {
-  width: 90%;
-}
-
 .w-\[97\%\] {
   width: 97%;
 }
@@ -1348,6 +1340,10 @@ video {
 
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 body{
