@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <!-- jquery mmenu library added -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.6/jquery.mmenu.all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.6/jquery.mmenu.all.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class="">
+<div id="mbl_menu"></div>
+
+<div id="page" class="overflow-x-hidden" >
+
+
+    <!-- navbar -->
+    <header class="w-full bg-[#FDF8EE] relative pb-[250px] overflow-x-hidden">
+        <img src="./assets/background.png" alt=""
+            class="absolute top-[274px] w-[100%] h-[55%] left-1 object-contain scale-125"
+            style="z-index: 1 !important" />
+        <div
+            class="container mx-auto flex items-center justify-between py-3 pt-8 flex-wrap sm:flex-row sm:flex md px-[15px]  sm:px-0 md:px-[15px] ">
+            <div class="cursor-pointer">
+                <img src="./assets/logo2.png" alt="" class="w-[174px]" />
+            </div>
+            <div class=" items-center sm:justify-between  lg:gap-[60px] hidden md:flex">
+                <nav id="menu">
+                    <ul
+                        class="flex items-center sm:gap-[45px] md:gap-[19px] md:mr-[15px] lg:mr-0  lg:gap-[45px] text-[16px] text-[#1D1D1D] font-semibold capitalize">
+                        <li class=""><a href="" class=" text-[#FF7426] ">Home</a></li>
+                        <li><a href="" class="hover:text-[#FF7426] transition-colors duration-300">About us</a></li>
+                        <li><a href="#courses" class="hover:text-[#FF7426] transition-colors duration-300">Courses</a></li>
+                        <li><a href="" class="hover:text-[#FF7426] transition-colors duration-300">Our Service</a></li>
+                        <li><a href="" class="hover:text-[#FF7426] transition-colors duration-300">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="flex items-center gap-[20px] capitalize">
+                    <a href="" class="bg-[#4D2C5E] hover:bg-[#FF7426] transition-colors duration-300 ease-out sm:px-[20px] lg:px-[40px] py-[15px] rounded-full text-[white] font-medium">Sign
+                        In</a>
+                </div>
+            </div>
+            <div class=" block sm:hidden pr-[10px]">
+                <a href="#menu"> <img src="./assets/menu.png" class="w-[40px]" alt=""></a>
+            </div>
+        </div>
+  o
+    </header>
+
+
+    <div class="bg-[#FDF8EE]  px-[15px] sm:px-0 md:px-[15px] lg:px-[30px] ">
+        <div class="border-b border-b-[#B7B7B7] pb-[65px]">
+            <div class="container mx-auto flex pt-[41px] gap-[118px] flex-col md:flex-col lg:flex-row">
+                <div class="basis-[22%]">
+                    <div class="pb-[24px] cursor-pointer">
+                        <img src="./assets/logo2.png" alt="" />
+                    </div>
+                    <p class="text-[#606060] text-[19px] leading-[35px]">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy a type
+                        specimen book.
+                    </p>
+                    </div>
+                    <div
+                        class="flex-1 md:grid md:grid-cols-2 lg:flex flex items-start justify-between gap-[104px] flex-col md:flex-col lg:flex-row">
+                        <div>
+                            <h2 class="text-[#00052E] text-[25px] font-semibold mb-[29px]">Company</h2>
+                            <ul class="space-y-[27px]">
+                                <li><a class="text-[#606060] text-[19px]" href="">About Us</a></li>
+                                <li><a class="text-[#606060] text-[19px]" href="">How to work?</a></li>
+                                <li><a class="text-[#606060] text-[19px]" href="">Popular Course</a></li>
+                                <li><a class="text-[#606060] text-[19px]" href="">Service</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div>
+                            <h2 class="text-[#00052E] text-[25px] font-semibold mb-[29px]">Courses</h2>
+                            <ul class="space-y-[27px]">
+                                <li><a class="text-[#606060] text-[19px]" href="">Categories</a></li>
+                                <li><a class="text-[#606060] text-[19px]" href="">Offline Course</a></li>
+                                <li><a class="text-[#606060] text-[19px]" href="">Video Course</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div>
+                            <h2 class="text-[#00052E] text-[25px] font-semibold mb-[29px]">Support</h2>
+                            <ul class="space-y-[27px]">
+                                <li><a class="text-[#606060] text-[19px]" href="">FAQ</a></li>
+                                <li><a class="text-[#606060] text-[19px]" href="">Help Center</a></li>
+                                <li><a class="text-[#606060] text-[19px]" href="">Career</a></li>
+                                <li><a class="text-[#606060] text-[19px]" href="">Privacy</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div>
+                            <h2 class="text-[#00052E] text-[25px] font-semibold mb-[29px]">Contact Info</h2>
+                            <ul class="space-y-[29px]">
+                                <li><a class="text-[#606060] text-[19px]" href="">+0913-705-3875</a></li>
+                                <li><a class="text-[#606060] text-[19px]" href="">ElizabethJ@jourrapide.com</a></li>
+                                <li>
+                                <a class="text-[#606060] text-[19px] " href="">4808 Skinner Hollow Road <br>Days Creek,
+                                    OR
+                                    97429</a>
+                                </li>
+                                </ul>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="flex items-center justify-center">
+            <p class="text-[#606060] text-[19px] text-center py-[21px] cursor-pointer">Education All Right Reserved,
+                2022</p>
+        </div>
+    </div>
+</div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
