@@ -52,3 +52,53 @@ top: 42% !important;
 ::-webkit-scrollbar-thumb:hover {
   background: #555;          /* Color when hovered */
 }
+
+/* //sticky navbar */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 50px; */
+  background-color: #fff;
+  z-index: 999;
+  /* border-bottom: 1px solid gray; */
+  box-shadow: 2px 2px 2px 1px rgba(208, 204, 204, 0.2);
+  animation: nav 0.5s ease-out;
+  transition: 0.3s ease-out;
+}
+
+@keyframes nav {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.scroll_to_top {
+  /* display: none; */
+  /* opacity: 0; */
+  position: fixed;
+  right: 50px;
+  z-index: 5555;
+  bottom: 50px;
+  height: 53px;
+  width: 53px;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #4D2C5E;
+  cursor: pointer;
+  transition: 0.7s ease-in-out;
+  box-shadow: 2px 2px 2px 1px rgba(208, 204, 204, 0.2);
+}
+.scroll_to_top svg {
+  color: rgb(255, 255, 255);
+}
+.scroll_to_top {
+  right: 25px;
+}

@@ -67,3 +67,15 @@ $(document).ready(function () {
   });
 });
 
+
+window.addEventListener("scroll", function () {
+  let navbar = document.querySelector(".navbar");
+  navbar.classList.toggle("sticky", window.scrollY > 50);
+  let btn = document.querySelector(".scroll_to_top");
+
+  if (window.scrollY > 300) {
+    btn.style.display = "flex"; // Show the button
+  } else {
+    btn.style.display = "none"; // Hide the button
+  }
+});
