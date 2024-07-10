@@ -2169,3 +2169,12 @@ body{
     align-items: center;
   }
 }
+
+.mm-listitem {
+  position: relative;
+  padding: 15px !important;
+}
+
+.mm-panels>.mm-panel>.mm-navbar+.mm-listview {
+  padding-top: 40px !important;
+}
